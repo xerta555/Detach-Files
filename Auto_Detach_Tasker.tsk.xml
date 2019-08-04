@@ -53,7 +53,7 @@
 		<Action sr="act4" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="0"/>
+			<Int sr="arg1" val="minutes"/>
 			<Int sr="arg2" val="seconds"/>
 			<Int sr="arg3" val="hours"/>
 			<Int sr="arg4" val="days"/>
