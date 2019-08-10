@@ -5,15 +5,15 @@
  <a href="https://forum.xda-developers.com/android/software-hacking/mod-detach-market-links-theme-ready-apps-t3447494"><img src="https://img.shields.io/badge/XDA-Thread-yellow.svg?longCache=true&style=flat-square"></a><br />
  <a href=https://t.me/Detach_gms_apps><img src="https://img.shields.io/badge/Telegram-Channel-blue.svg?longCache=true&style=flat-square"></a></p><br />
 
-<h3 align=center>Introduction</u></h3>
-<h4 align=center><b>INFO:</b>This Module is a portage of the original MOD created by hinxnz - <a href="https://forum.xda-developers.com/member.php?u=1909299">XDA thread/OP</a> to works as a Magisk module for Android, so all credits to him/her<h4>
+<h3 align=center>Introduction</h3>
+<h4 align=center><b>INFO:</b>This Module is a port of the original MOD created by hinxnz - <a href="https://forum.xda-developers.com/member.php?u=1909299">XDA thread/OP</a> to work as a Magisk module for Android, so all credits to him/her.<h4>
 <br />
  
 <h4>Short explanation:</h4>
-<h5>With this MOD, you can "detach" app(s) from your Google Play Store automatic update, it completly hide the update in the "My games and applications" section. So you willn't see your detached apps from your Play Store updates pending!<br /></h5>
+<h5>With this MOD, you can "detach" app(s) from your Google Play Store automatic update process, it completely hides the update in the "My games and applications" section. So you won't see your detached apps from your Play Store pending updates!<br /></h5>
 <br />
 
-<b><u>Setup steps:<u></b>
+<b>Setup steps:</b>
 - If you just want to detach common app(s) like Hangouts, YouTube, Facebook, etc, just download the <a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/detach.txt">detach.txt</a> file and save it in your `/sdcard/` folder.
 - If you want to detach some specific apps, so download the <a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/detach.custom.txt"> detach.custom.txt</a> file and save it in your `/sdcard/` folder.
 - Make sure that the file(s) detach.txt and/or detach.custom.txt are in your `/sdcard/` folder.
@@ -21,9 +21,9 @@
 - Done!
 <br />
 
-<b><u>Compatibility:<u></b>
+<b>Compatibility:</b>
 - Magisk (v15 to lastest)
-- All Android device from Lollipop to Pie
+- All Android devices from Lollipop to Pie
 - Magisk Manager & TWRP
 - Substratum themes for Play Store
 - Scheduling
@@ -76,8 +76,6 @@
 - Write your app(s) package(s) name(s) one by line like that:<br />
 
 <img src="https://image.ibb.co/hL1kMV/Screenshot-20181028-201657.png" alt="Screenshot-20181028-201657.png" height="1200" width="600"><br />
-Where to find a package name for an app?
-https://play.google.com/store/apps/details?id=com.package.name&hl=en
 <br />
 <br />
 
@@ -85,23 +83,28 @@ https://play.google.com/store/apps/details?id=com.package.name&hl=en
 
 #### Q: A problem ?
 
-A:Ask on Telegram group or/and on XDA OP (scroll up)
+A: Ask on Telegram group or/and on XDA OP (scroll up)
 
 #### Q: When changes are applied ?
 
-A:When you flash the module, and when you run the command: su -c detach -id.
+A: When you flash the module, and when you run the command: su -c detach -id.
+
+#### Q: Where to find a package name for an app?
+
+A: The name of the package here is in the middle of the two texts framed in grey::<br />
+`https://play.google.com/store/apps/details?id=`com.package.name`&hl=en`
 
 #### Q: Apps aren't hiden in my Play Store!
 
-A:If you have already run the command (`su -c -detach -id`), report on the Telegram group.<br />
+A: If you have already run the command (`su -c -detach -id`), report on the Telegram group.<br />
 
 #### Q: How to "attach" again an app who is previously "hided" ?
 
-A:Just comment again the app name in the detach.txt file or delete the corresponding package name in the detach.custom file and wait some times. Or if you are not afraid of anything, remove Play Store app datas but you will loose your Play Store apps updates history.
+A: Just comment again the app name in the detach.txt file or delete the corresponding package name in the detach.custom file and wait some times. Or if you are not afraid of anything, remove Play Store app datas but you will loose your Play Store apps updates history.
 
 #### Q: What does this module do ? Does touch the system partition ?
 
-A:It only edit an SQL database file in Play Store folder on your `/data` partition. No more, no less.
+A: It only edit an SQL database file in Play Store folder on your `/data` partition. No more, no less.
 
 #### Q: After several hours, my detached app(s) are back in my Play Store, what's wrong ?
 
@@ -111,17 +114,20 @@ To fix it: just install a Terminal Emulator app or Termux (or another terminal e
 
 #### Q: My Play Store history search will be deleted ?
 
-A:<b>ONLY</b> if you select the 'c' option in the terminal menu (as indicated in the menu).
+A: <b>ONLY</b> if you select the 'c' option in the terminal menu (as indicated in the menu).
 
 #### Q: Is it possible to add or remove app(s) from your the Detach setup ?
 
-A: Yes! For adding:
-- `su -c detach -a` (or `su -c detach --add-app`)
-<br />
-A: And for removing:<br />
-- `su -c detach -r` (or `su -c detach --rem-app`)
+A: Yes! See below:
+- For adding:
+    - `su -c detach -a` (or `su -c detach --add-app`)
+
+- And for removing:
+    - `su -c detach -r` (or `su -c detach --rem-app`)
 
 #### Q: And if I'm too lazy to do the detach command every time the Play Store updates its file?
 
-A: You can schedule the command `su -c detach -id`. To do this, just do:
-`su -c detach -t` (or `su -c detach --task-scheduler`) and choose a way.
+A: You can schedule the `su -c detach -id` command
+- To do this, just do:
+    - Run `su -c detach -t` (or `su -c detach --task-scheduler`) command in your terminal
+    - Choose a way.
