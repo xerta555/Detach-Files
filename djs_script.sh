@@ -84,5 +84,3 @@ if grep -q "$wrong_result" "$MAGMOD/first_detach_result.txt"; then
 	
 	for f in "$ACTAPPS" "$ACTAPPSBCK" "$MAGMOD/first_detach_result.txt"; do rm -f "$f"; done
 fi
-
-
