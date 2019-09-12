@@ -4,22 +4,16 @@
 		<edate>1566071305790</edate>
 		<id>4</id>
 		<mid0>2</mid0>
-		<nme>Condition</nme>
+		<nme>Detach for Tasker</nme>
 		<Time sr="con0">
 			<fh>-1</fh>
 			<fm>-1</fm>
 			<rep>1</rep>
-			<repval>6</repval>
+			<repval>1</repval>
 			<th>-1</th>
 			<tm>-1</tm>
 		</Time>
 	</Profile>
-	<Project sr="proj0" ve="2">
-		<cdate>1566069851194</cdate>
-		<name>Detach for Tasker</name>
-		<pids>4</pids>
-		<tids>2</tids>
-	</Project>
 	<Task sr="task2">
 		<cdate>1566070136376</cdate>
 		<edate>1566071305790</edate>
@@ -28,10 +22,8 @@
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>123</code>
-			<label>Detach command</label>
-			<se>false</se>
 			<Str sr="arg0" ve="3">su -c detach -id</Str>
-			<Int sr="arg1" val="15"/>
+			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="1"/>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
