@@ -16,7 +16,7 @@ You can access the simple mode by put a simple file `simple_mode.txt` in your `/
 
 <b>:scroll: Setup steps:</b>
 - Beginning by download the Detach.txt file to your `/sdcard/` folder (equivalent to `/storage/emulated/0/`): <a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/Detach.txt">Detach.txt</a>.
-- Uncomment the common app(s) like Hangouts, YouTube, Facebook, etc you want in the previous downloaded file.
+- Uncomment the common app(s) you want in the downloaded file.
 - Save changes to your `/sdcard/Detach.txt` file.
 - Flash the module ZIP..
 - Juste note that Magisk Manager is recommended for the module flash, but the 'Simple-mode' can't works under custom recovery because it require LTE/WIFI).
@@ -25,8 +25,8 @@ You can access the simple mode by put a simple file `simple_mode.txt` in your `/
 <br />
 <br />
 
-<b>:sparkler: Bonus:</b>
-=> If you want to detach other applications from your Play Store app, you can!
+<b>:sparkler: Bonus:</b> You want to detach other applications from your Play Store ? You can !
+<br />
 - Open your `/sdcard/Detach.txt` file
 - Write `# Other applications` at the line number 45
 - Press your ENTER key one time to do a new-line
@@ -54,29 +54,28 @@ You can access the simple mode by put a simple file `simple_mode.txt` in your `/
 ------------------------------------------------------------------------------------
 
 #### :bulb: Terminal features:
-- Instant detaching: instantly detaching your favorites app(s)
-- Add app(s): detach new app(s)
-- Remove app(s): attach again app(s) to Play Store updates
-- Kill: killing Play Store application
-- Clear Play Store data: clear the Play Store's app data
-- Task scheduler: automaticaly setup a task scheduler to automaticaly detach your app(s) from the Play Store's updates
-- Silent mode: enable or disable the silent mode, to have cleaner and less cluttered order results
-- Busybox compatibility check
-- Help: a help menu with all possible commands explained in detail
+1. Instant detaching: instantly detaching your favorites app(s)
+2. Add app(s): detach new app(s)
+3. Remove app(s): attach again app(s) to Play Store updates
+4. Kill: killing Play Store application
+5. Clear Play Store data: clear the Play Store's app data
+6. Task scheduler: automaticaly setup a task scheduler to automaticaly detach your app(s) from the Play Store's updates
+7. Silent mode: enable or disable the silent mode, to have cleaner and less cluttered order results
+8. Busybox compatibility check
+9. Help: a help menu with all possible commands explained in detail
 
 ------------------------------------------------------------------------------------
 
 <br />
-<h3><u>For common apps:<u></h3>
-- You have to download the `Detach.txt` file:
-<a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/Detach.txt" ">Detach.txt</a>
-- Save it in your internal storage: `/sdcard/Detach.txt` (quivalent to `/storage/emulated/0/Detach.txt`).
+### For common apps:
+1. You have to download the *Detach.txt file:
+<a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/Detach.txt" >Detach.txt</a>
+2. Save it in your internal storage: `/sdcard/Detach.txt` (quivalent to `/storage/emulated/0/Detach.txt`).
  
 <img src="https://i.ibb.co/X54TnPG/Screenshot-20190923-184536.png" alt="Screenshot-20190815-170758.png" height="1200" width="600"><br />
 <br />
-<h4>- As file's instructions:</h4>
-
-- Uncomment the app(s) you want to "hide" from Play Store updates:<br />
+### As file's instructions:</h4>
+1. Uncomment the app(s) you want to "hide" from Play Store updates:<br />
 
 <img src="https://i.ibb.co/SxFqK9W/Screenshot-20190815-170841.png" alt="Screenshot-20190815-170841.png" height="1200" width="600"><br />
 
