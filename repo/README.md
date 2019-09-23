@@ -10,15 +10,31 @@
 <br />
  
 <h4>:information_source: Short explanation:</h4>
-<h5>With this MOD, you can "detach" app(s) from your Google Play Store automatic update process, it completely hides the update in the "My games and applications" section. So you won't see your detached apps from your Play Store pending updates!<br /></h5>
+<h5>With this MOD, you can "detach" app(s) from your Google Play Store automatic update process, it completely hides the update in the "My games and applications" section. So you won't see your detached apps from your Play Store pending updates!
+You can access the simple mode by put a simple file `simple_mode.txt` in your `/sdcard/` folder and flash the module.<br /></h5>
 <br />
 
 <b>:scroll: Setup steps:</b>
-- If you just want to detach common app(s) like Hangouts, YouTube, Facebook, etc, just download the <a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/detach.txt">detach.txt</a> file and save it in your `/sdcard/` folder.
-- If you want to detach some specific apps, so download the <a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/detach.custom.txt"> detach.custom.txt</a> file and save it in your `/sdcard/` folder.
-- Make sure that the file(s) detach.txt and/or detach.custom.txt are in your `/sdcard/` folder.
-- Flash the module ZIP (Magisk Manager and TWRP are supported)
+- Beginning by download the Detach.txt file to your `/sdcard/` folder (equivalent to `/storage/emulated/0/`): <a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/Detach.txt">Detach.txt</a>.
+- Uncomment the common app(s) like Hangouts, YouTube, Facebook, etc you want in the previous downloaded file.
+- Save changes to your `/sdcard/Detach.txt` file.
+- Flash the module ZIP..
+- Juste note that Magisk Manager is recommended for the module flash, but the 'Simple-mode' can't works under custom recovery because it require LTE/WIFI).
+- Reboot your device.
 - Done!
+<br />
+<br />
+
+<b>:sparkler: Bonus:</b>
+=> If you want to detach other applications from your Play Store app, you can!
+- Open your `/sdcard/Detach.txt` file
+- Write `# Other applications` at the line number 45
+- Press your ENTER key one time to do a new-line
+- Write the package(s) name(s) of application(s) you want to detach
+- Let a blanck line at the end of your file (with your ENTER as always)
+- Save your file
+- Flash the module again via Magisk Manager (or TWRP)
+<br />
 <br />
 
 <b>:heavy_check_mark: Compatibility:</b>
@@ -26,7 +42,9 @@
 - All Android devices from Lollipop to Pie
 - Magisk Manager & TWRP
 - Substratum themes for Play Store
+- `LF` line-end (Linux friendly)
 - Scheduling
+<br />
 <br />
 
 ------------------------------------------------------------------------------------
@@ -50,30 +68,28 @@
 
 <br />
 <h3><u>For common apps:<u></h3>
-- You have to download the following file: <a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/detach.txt" ">detach.txt</a> 
+- You have to download the `Detach.txt` file:
+<a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/Detach.txt" ">Detach.txt</a>
+- Save it in your internal storage: `/sdcard/Detach.txt` (quivalent to `/storage/emulated/0/Detach.txt`).
  
-- Save it in your phone's internal storage root:<br />
-(So: `/sdcard/detach.txt` or `/storage/emulated/0/detach.txt`)
-
-<img src="https://i.ibb.co/17hMqx6/Screenshot-20190815-170758.png" alt="Screenshot-20190815-170758.png" height="1200" width="600"><br />
+<img src="https://i.ibb.co/X54TnPG/Screenshot-20190923-184536.png" alt="Screenshot-20190815-170758.png" height="1200" width="600"><br />
 <br />
 <h4>- As file's instructions:</h4>
- - uncomment the app(s) you want to "hide" from Play Store updates:<br />
+
+- Uncomment the app(s) you want to "hide" from Play Store updates:<br />
 
 <img src="https://i.ibb.co/SxFqK9W/Screenshot-20190815-170841.png" alt="Screenshot-20190815-170841.png" height="1200" width="600"><br />
 
 ------------------------------------------------------------------------------------
 
 <br />
-<h3><u>For any other apps:<u></h3>
-- You have to download this file: <a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/detach.custom.txt" "> detach.custom.txt</a>
- 
-- Saving it on root of your internal storage as before:<br />
-(So: `/sdcard/detach.custom.txt` or `/storage/emulated/0/detach.custom.txt`)
-
-- Type your app(s) package(s) name(s), one per line and let a blanck line at the end. For example:<br />
-
-<img src="https://i.ibb.co/XyS3kFF/Screenshot-20190815-170905.png" alt="Screenshot-20190815-170905.png" height="1200" width="600"><br />
+<h3><u>If you want to detach any other app(s):<u></h3>
+- You have to write `# Custom packages` at the line 45
+- Write the app(s) package(s) name(s) on the next line.
+- Don't forget to press your ENTER key when you will have finish to write your custom packages names.
+<br />
+- An exemple:
+<img src="https://i.ibb.co/HPdryRX/Screenshot-20190923-191402.png" alt="Screenshot-20190815-170841.png" height="1200" width="600"><br />
 <br />
 <br />
 
@@ -83,9 +99,9 @@
 
 A: Ask on Telegram group or/and on XDA OP (scroll up)
 
-#### Q: When are the changes applied ?
+#### Q: When are the changes applied after the first flash ?
 
-A: When you flash the module, and when you run the command: su -c detach -id.
+A: When you flash the module, and reboot your device.
 
 #### Q: Where to find an app's package name ?
 
@@ -94,7 +110,7 @@ A: App's package name is in the middle of the two texts framed in grey<br />
 
 #### Q: Apps aren't hidden in my Play Store!
 
-A: If you have already run the command (`su -c -detach -id`), report on the Telegram group.<br />
+A: If you have already run the command `su -c -detach -id`, report on the Telegram group.<br />
 
 #### Q: How to "attach" again an app who is previously "hidden" ?
 
