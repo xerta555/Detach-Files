@@ -44,7 +44,7 @@ You can access the simple mode by put a simple file `simple_mode.txt` in your `/
 - All Android devices from Lollipop to Pie
 - Magisk Manager & TWRP
 - Substratum themes for Play Store
-- `LF` line-end (Linux friendly)
+- Any Linux text editor (for `LF` line-end usage by default)
 - Scheduling
 <br />
 <br />
