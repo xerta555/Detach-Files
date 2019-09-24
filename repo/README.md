@@ -15,13 +15,14 @@ You can access the simple mode by put a simple file `simple_mode.txt` in your `/
 <br />
 
 <b>:scroll: Setup steps:</b>
-- Beginning by download the Detach.txt file to your `/sdcard/` folder (equivalent to `/storage/emulated/0/`): <a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/Detach.txt">Detach.txt</a>.
-- Uncomment the common app(s) you want in the downloaded file.
-- Save changes to your `/sdcard/Detach.txt` file.
-- Flash the module ZIP..
-- Juste note that Magisk Manager is recommended for the module flash, but the 'Simple-mode' can't works under custom recovery because it require LTE/WIFI).
+- Start by downloading the `Detach.txt` file to your `/sdcard/` folder: <a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/Detach.txt">Detach.txt</a>
+  - (equivalent to `/storage/emulated/0/`)
+- Uncomment the common app(s) you want in this file
+- Save changes
+- Flash the module ZIP with Magisk Manager..
+  - Magisk Manager app is recommended to be able to use the 'Simple-mode', as it require LTE/WIFI.
 - Reboot your device.
-- Done!
+- Profit!
 <br />
 <br />
 
@@ -29,11 +30,12 @@ You can access the simple mode by put a simple file `simple_mode.txt` in your `/
 <br />
 - Open your `/sdcard/Detach.txt` file
 - Write `# Other applications` at the line number 45
-- Press your ENTER key one time to do a new-line
-- Write the package(s) name(s) of application(s) you want to detach
-- Let a blanck line at the end of your file (with your ENTER as always)
-- Save your file
-- Flash the module again via Magisk Manager (or TWRP)
+- Press your `ENTER` key 1 time to do a new-line (`\n`)
+- Write the package(s) name(s) of application(s) you want to detach (1 by line)
+- Let a blanck line at the end of your file (with your `ENTER` as always)
+- Save changes
+  - Flash the module again via Magisk Manager (or TWRP)
+  - Or just do `su -c detach -a` in a terminal emulator
 <br />
 <br />
 
@@ -66,29 +68,33 @@ You can access the simple mode by put a simple file `simple_mode.txt` in your `/
 - Help: a help menu with all possible commands explained in details
 
 ------------------------------------------------------------------------------------
-
 <br />
+
 <b>For common apps:</b>
-1. You have to download the `Detach.txt` file: <a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/Detach.txt">Detach.txt</a>
-2. Save it in your internal storage: `/sdcard/Detach.txt` (quivalent to `/storage/emulated/0/Detach.txt`).
+- You have to download the `Detach.txt` file: <a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/Detach.txt">Detach.txt</a>
+- Save it in your internal storage: `/sdcard/Detach.txt` (quivalent to `/storage/emulated/0/Detach.txt`).
  
 <img src="https://i.ibb.co/X54TnPG/Screenshot-20190923-184536.png" alt="Screenshot-20190815-170758.png" height="1200" width="600">
-
 <br />
-<b>As file's instructions:</b>
-- Uncomment the app(s) you want to "hide" from Play Store updates:<br />
+<br />
 
+<b>As the instructions say:</b>
+- Uncomment the app(s) you want to "hide" from Play Store updates
+- Save your changes
+<br />
 <img src="https://i.ibb.co/SxFqK9W/Screenshot-20190815-170841.png" alt="Screenshot-20190815-170841.png" height="1200" width="600"><br />
 
 ------------------------------------------------------------------------------------
-
 <br />
-<h3><b>If you want to detach any other app(s):</b></h3>
+<br />
+
+<b>For any other app(s):</b>
 - You have to write `# Custom packages` at the line 45
 - Write the app(s) package(s) name(s) on the next line.
 - Don't forget to press your ENTER key when you will have finish to write your custom packages names.
 <br />
-- An exemple:
+<h3><b>An exemple:</b></h3>
+<br />
 <img src="https://i.ibb.co/HPdryRX/Screenshot-20190923-191402.png" alt="Screenshot-20190815-170841.png" height="1200" width="600"><br />
 <br />
 <br />
@@ -101,7 +107,7 @@ A: Ask on Telegram group or/and on XDA OP (scroll up)
 
 #### Q: When are the changes applied after the first flash ?
 
-A: When you flash the module, and reboot your device.
+A: After you will have reboot your device.
 
 #### Q: Where to find an app's package name ?
 
@@ -114,7 +120,7 @@ A: If you have already run the command `su -c -detach -id`, report on the Telegr
 
 #### Q: How to "attach" again an app who is previously "hidden" ?
 
-A:  Just comment again the app name in the detach.txt file or delete the corresponding package name in the detach.custom file and wait some minutes/hours. Or you can remove Play Store's app data, but you will lose your Play Store update history.
+A:  Just comment again the app name or the corresponding package name in the `/sdcard/detach.txt` file and wait some minutes/hours. Or you can remove Play Store's app data, but you will lose your Play Store update and search history.
 
 #### Q: What does this module do? Does it touch the system partition ?
 
@@ -128,7 +134,7 @@ To fix it: just install a Terminal Emulator app or Termux (or another terminal e
 
 #### Q: My Play Store history search will be deleted ?
 
-A: <b>ONLY</b> if you select the 'c' option in the terminal menu (as indicated in the menu).
+A: <b>ONLY</b> if you select the `-c` option in the terminal menu (as indicated in the menu).
 
 #### Q: Is it possible to add or remove app(s) from the module's setup ?
 
