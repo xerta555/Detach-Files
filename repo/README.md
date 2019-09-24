@@ -49,40 +49,41 @@ You can access the simple mode by put a simple file `simple_mode.txt` in your `/
 
 ------------------------------------------------------------------------------------
 
-<h5>:warning: <b>Warning</b>: In a very few cases, this mod can purely break the Play Store app, so please backup your phone before flashing this mod. Thanks for your understanding.</h5>
+<h5>:warning: <b>Warning:</b> In a very few cases, this mod can purely break the Play Store app, so please backup your phone before flashing this mod. Thanks for your understanding.</h5>
 
 ------------------------------------------------------------------------------------
 
-#### :bulb: Terminal features:
-1. Instant detaching: instantly detaching your favorites app(s)
-2. Add app(s): detach new app(s)
-3. Remove app(s): attach again app(s) to Play Store updates
-4. Kill: killing Play Store application
-5. Clear Play Store data: clear the Play Store's app data
-6. Task scheduler: automaticaly setup a task scheduler to automaticaly detach your app(s) from the Play Store's updates
-7. Silent mode: enable or disable the silent mode, to have cleaner and less cluttered order results
-8. Busybox compatibility check
-9. Help: a help menu with all possible commands explained in detail
+:bulb: <b>Terminal features:</b>
+- Instant detaching: instantly detaching your favorites app(s)
+- List detached app(s): list all your app(s) wich are detached from the Play Store
+- Add app(s): detach new app(s)
+- Remove app(s): remove detach feature for detached app(s)
+- Kill: killing Play Store application
+- Clear Play Store data: clear the Play Store's app data
+- Task scheduler: Several possibilities to automate the detachment of your application(s) from the Play Store
+- Silent mode: enable or disable the silent mode, to have for a cleaner and less cluttered display in your terminal
+- Busybox compatibility check and Magisk module auto-installer
+- Help: a help menu with all possible commands explained in details
 
 ------------------------------------------------------------------------------------
 
 <br />
-### For common apps:
-1. You have to download the *Detach.txt file:
-<a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/Detach.txt" >Detach.txt</a>
+<b>For common apps:</b>
+1. You have to download the `Detach.txt` file: <a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/Detach.txt">Detach.txt</a>
 2. Save it in your internal storage: `/sdcard/Detach.txt` (quivalent to `/storage/emulated/0/Detach.txt`).
  
-<img src="https://i.ibb.co/X54TnPG/Screenshot-20190923-184536.png" alt="Screenshot-20190815-170758.png" height="1200" width="600"><br />
+<img src="https://i.ibb.co/X54TnPG/Screenshot-20190923-184536.png" alt="Screenshot-20190815-170758.png" height="1200" width="600">
+
 <br />
-### As file's instructions:</h4>
-1. Uncomment the app(s) you want to "hide" from Play Store updates:<br />
+<b>As file's instructions:</b>
+- Uncomment the app(s) you want to "hide" from Play Store updates:<br />
 
 <img src="https://i.ibb.co/SxFqK9W/Screenshot-20190815-170841.png" alt="Screenshot-20190815-170841.png" height="1200" width="600"><br />
 
 ------------------------------------------------------------------------------------
 
 <br />
-<h3><u>If you want to detach any other app(s):<u></h3>
+<h3><b>If you want to detach any other app(s):</b></h3>
 - You have to write `# Custom packages` at the line 45
 - Write the app(s) package(s) name(s) on the next line.
 - Don't forget to press your ENTER key when you will have finish to write your custom packages names.
