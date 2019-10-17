@@ -19,8 +19,8 @@ You can access the simple mode by put a simple file `simple_mode.txt` in your `/
   - (equivalent to `/storage/emulated/0/`)
 - Uncomment the common app(s) you want in this file
 - Save changes
-- Flash the module ZIP with Magisk Manager..
-  - Magisk Manager app is recommended to be able to use the 'Simple-mode', as it require LTE/WIFI.
+- Flash the module ZIP with Magisk Manager
+  - Magisk Manager app is required for the flash
 - Reboot your device.
 - Profit!
 <br />
@@ -28,21 +28,21 @@ You can access the simple mode by put a simple file `simple_mode.txt` in your `/
 
 <b>:sparkler: Bonus:</b> You want to detach other applications from your Play Store ? You can !
 <br />
-- Open your `/sdcard/Detach.txt` file
+- Open your `/sdcard/Detach.txt` file on your device
 - Write `# Other applications` at the line number 45
 - Press your `ENTER` key 1 time to do a new-line (`\n`)
 - Write the package(s) name(s) of application(s) you want to detach (1 by line)
 - Let a blanck line at the end of your file (with your `ENTER` as always)
 - Save changes
-  - Flash the module again via Magisk Manager (or TWRP)
-  - Or just do `su -c detach -a` in a terminal emulator
+- Flash the module again via Magisk Manager
+  - Or just do `su -c detach -a` in a terminal emulator (if you already have the module installed)
 <br />
 <br />
 
 <b>:heavy_check_mark: Compatibility:</b>
 - Magisk (v15 to lastest)
 - All Android devices from Lollipop to Pie
-- Magisk Manager & TWRP
+- Magisk Manager
 - Substratum themes for Play Store
 - Any Linux text editor (for `LF` line-end usage by default)
 - Scheduling
@@ -89,13 +89,13 @@ You can access the simple mode by put a simple file `simple_mode.txt` in your `/
 <br />
 
 <b>For any other app(s):</b>
-- You have to write `# Custom packages` at the line 45
+- You have to write `# Other applications` at the line 45
 - Write the app(s) package(s) name(s) on the next line.
 - Don't forget to press your ENTER key when you will have finish to write your custom packages names.
 <br />
 <h3><b>An exemple:</b></h3>
 <br />
-<img src="https://i.ibb.co/HPdryRX/Screenshot-20190923-191402.png" alt="Screenshot-20190815-170841.png" height="1200" width="600"><br />
+<img src="https://i.ibb.co/gTNb8hW/photo-2019-10-17-19-04-41.jpg" alt="Screenshot-20190815-170841.png" height="1200" width="600"><br />
 <br />
 <br />
 
@@ -109,6 +109,10 @@ A: Ask on Telegram group or/and on XDA OP (scroll up)
 
 A: After you will have reboot your device.
 
+#### Q: And the `detach.custom` file so?
+
+A: Starting from version `4.X`, there is no longer need of this file, use the `Detach.txt` file.
+
 #### Q: Where to find an app's package name ?
 
 A: App's package name is in the middle of the two texts framed in grey<br />
@@ -120,7 +124,7 @@ A: If you have already run the command `su -c -detach -id`, report on the Telegr
 
 #### Q: How to "attach" again an app who is previously "hidden" ?
 
-A:  Just comment again the app name or the corresponding package name in the `/sdcard/detach.txt` file and wait some minutes/hours. Or you can remove Play Store's app data, but you will lose your Play Store update and search history.
+A:  Just comment again the app name or the corresponding package name in the `/sdcard/Detach.txt` file and wait some minutes/hours. Or you can remove Play Store's app data, but you will lose your Play Store update and search history.
 
 #### Q: What does this module do? Does it touch the system partition ?
 
