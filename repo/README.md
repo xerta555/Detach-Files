@@ -47,6 +47,10 @@ You can access the simple mode by put a simple file `simple_mode.txt` in your `/
 - Any Linux text editor (for `LF` line-end usage by default)
 - Scheduling
 <br />
+
+<b>:page_facing_up: Other Magisk module pre-request:</b>
+- Busybox for Android NDK
+<br />
 <br />
 
 ------------------------------------------------------------------------------------
