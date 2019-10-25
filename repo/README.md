@@ -124,7 +124,7 @@ A: App's package name is in the middle of the two texts framed in grey<br />
 
 #### Q: Apps aren't hidden in my Play Store!
 
-A: If you have already run the command `su -c -detach -id`, report on the Telegram group.<br />
+A: If you have already run the command `su -c detach -id`, report on the Telegram group.<br />
 
 #### Q: How to "attach" again an app who is previously "hidden" ?
 
