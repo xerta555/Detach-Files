@@ -14,7 +14,7 @@
 You can access the simple mode by put a simple file `simple_mode.txt` in your `/sdcard/` folder and flash the module.<br /></h5>
 <br />
 
-<b>:scroll: Setup steps:</b>
+<b><h3>:scroll: Setup steps:</h3></b>
 - Start by downloading the `Detach.txt` file to your `/sdcard/` folder: <a href="https://raw.githubusercontent.com/xerta555/Detach-Files/master/Detach.txt">Detach.txt</a>
   - (equivalent to `/storage/emulated/0/`)
 - Uncomment the common app(s) you want in this file
@@ -26,13 +26,12 @@ You can access the simple mode by put a simple file `simple_mode.txt` in your `/
 <br />
 <br />
 
-<b>:sparkler: Bonus:</b> You want to detach other applications from your Play Store ? You can !
-<br />
+<b><h3>:sparkler: Bonus: To detach other applications from your Play Store</h3></b>
 - Open your `/sdcard/Detach.txt` file on your device
 - Write `# Other applications` at the line number 45
-- Press your `ENTER` key 1 time to do a new-line (`\n`)
+- Press your `ENTER` key 1 time to do a new-line (equivalent symbol: `\n`)
 - Write the package(s) name(s) of application(s) you want to detach (1 by line)
-- Let a blanck line at the end of your file (with your `ENTER` as always)
+- Let a blanck line at the end of your file (with your `ENTER` or with the equivalent symbol: `\n`)
 - Save changes
 - Flash the module again via Magisk Manager
   - Or just do `su -c detach -a` in a terminal emulator (if you already have the module installed)
@@ -115,9 +114,9 @@ A: After you will have reboot your device.
 
 #### Q: And the `detach.custom` file so?
 
-A: Starting from version `4.X`, there is no longer need of this file, use the `Detach.txt` file.
+A: Starting from version `4.X`, there is no longer need of this file, you just have to use the `Detach.txt` file.
 
-#### Q: Where to find an app's package name ?
+#### Q: Where to find an app's package name for an another app (custom app) ?
 
 A: App's package name is in the middle of the two texts framed in grey<br />
 `https://play.google.com/store/apps/details?id=`com.package.name`&hl=en`
