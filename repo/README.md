@@ -47,7 +47,7 @@ You can access the simple mode by put a simple file `simple_mode.txt` in your `/
 - Scheduling
 <br />
 
-<b>:page_facing_up: Other Magisk module pre-request:</b>
+<b>:page_facing_up: Other Magisk module pre-requisite:</b>
 - Busybox for Android NDK
 <br />
 <br />
